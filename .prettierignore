@@ -1,0 +1,4 @@
+node_modules
+dist
+.opencode
+package-lock.json
