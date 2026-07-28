@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Base */
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: var(--font-mono);
+}
+
+/* Scrollbar dark */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #121214;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a40;
+}
+
+/* React Flow overrides */
+.react-flow__node {
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+.react-flow__handle {
+  opacity: 0;
+}
+.react-flow__controls {
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+.react-flow__minimap {
+  border-radius: 8px !important;
+}
